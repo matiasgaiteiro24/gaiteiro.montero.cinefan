@@ -1,0 +1,75 @@
+.custom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1050;
+}
+
+.custom-modal-content {
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.hidden {
+  display: none;
+}
+
+.modal-header {
+  background-color: #dc3545;
+  color: white;
+}
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.modal-footer .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  width: 100%;
+  max-width: 18rem;
+  min-height: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  height: 28rem;
+  object-fit: cover;
+}
+
+.navbar-nav .nav-link {
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .navbar-brand {
+  margin-right: auto;
+}
